@@ -1,0 +1,137 @@
+:root {
+  color-scheme: light;
+  --ink: #16212f;
+  --muted: #526071;
+  --paper: #fbfaf7;
+  --panel: #ffffff;
+  --line: #d8ded7;
+  --accent: #0b6b68;
+  --accent-soft: #e5f2ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+main {
+  width: min(880px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 64px;
+}
+
+.hero {
+  padding: 40px 0 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  max-width: 720px;
+  margin: 0;
+  font-size: clamp(2.2rem, 6vw, 4.6rem);
+  line-height: 1.03;
+  letter-spacing: 0;
+}
+
+.lede {
+  max-width: 720px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.date {
+  display: inline-block;
+  margin: 24px 0 0;
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--ink);
+  font-size: 0.94rem;
+}
+
+section {
+  padding: 32px 0 4px;
+  border-bottom: 1px solid var(--line);
+}
+
+section:last-child {
+  border-bottom: 0;
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin: 28px 0 8px;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+ul {
+  margin: 0 0 18px;
+  padding-left: 24px;
+}
+
+li + li {
+  margin-top: 8px;
+}
+
+a {
+  color: var(--accent);
+  font-weight: 650;
+}
+
+a:focus-visible {
+  outline: 3px solid #9bd3cc;
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
+  body {
+    font-size: 16px;
+  }
+
+  main {
+    width: min(100% - 24px, 880px);
+    padding-top: 24px;
+  }
+
+  .hero {
+    padding-top: 28px;
+  }
+}
