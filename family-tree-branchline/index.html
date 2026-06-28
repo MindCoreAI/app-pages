@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Family Tree &amp; Branchline</title>
-  <meta name="description" content="Support and app information for Family Tree & Branchline, an ancestry and kinship mapping app.">
+  <title>Family Tree &amp; Branchline Support &amp; Privacy</title>
+  <meta name="description" content="Support, privacy policy, and terms for Family Tree & Branchline.">
   <style>
     :root {
       color-scheme: light;
@@ -14,6 +14,7 @@
       --paper: #fbfcf8;
       --panel: #ffffff;
       --green: #1f7a52;
+      --green-soft: #e8f3ee;
       --blue: #315f91;
     }
 
@@ -24,49 +25,105 @@
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.5;
+      font-size: 17px;
+      line-height: 1.65;
       color: var(--ink);
       background: var(--paper);
     }
 
     main {
-      width: min(760px, calc(100% - 32px));
+      width: min(880px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 56px 0;
+      padding: 48px 0 64px;
+    }
+
+    .hero {
+      padding: 36px 0 28px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--green);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    li {
+      overflow-wrap: anywhere;
     }
 
     h1 {
-      margin: 0 0 8px;
-      font-size: clamp(2rem, 7vw, 3.75rem);
-      line-height: 1.02;
+      max-width: 760px;
+      margin: 0;
+      font-size: clamp(2.1rem, 6vw, 4.25rem);
+      line-height: 1.03;
       letter-spacing: 0;
     }
 
     h2 {
-      margin: 36px 0 10px;
-      font-size: 1.2rem;
+      margin: 0 0 14px;
+      font-size: 1.65rem;
+      line-height: 1.2;
+      letter-spacing: 0;
+    }
+
+    h3 {
+      margin: 28px 0 8px;
+      font-size: 1.08rem;
+      line-height: 1.3;
       letter-spacing: 0;
     }
 
     p {
-      margin: 0 0 14px;
+      margin: 0 0 16px;
       color: var(--muted);
+    }
+
+    ul {
+      margin: 0 0 18px;
+      padding-left: 24px;
+    }
+
+    li + li {
+      margin-top: 8px;
     }
 
     a {
       color: var(--blue);
-    }
-
-    .subtitle {
-      margin-bottom: 28px;
-      font-size: 1.2rem;
-      color: var(--green);
       font-weight: 650;
     }
 
-    .section {
-      padding: 22px 0;
-      border-top: 1px solid var(--line);
+    section {
+      padding: 32px 0 4px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    section:last-child {
+      border-bottom: 0;
+    }
+
+    .lede {
+      max-width: 720px;
+      margin: 22px 0 0;
+      font-size: 1.18rem;
+    }
+
+    .date {
+      display: inline-block;
+      margin: 22px 0 0;
+      padding: 6px 10px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--green-soft);
+      color: var(--ink);
+      font-size: 0.94rem;
     }
 
     .metadata {
@@ -94,11 +151,19 @@
 </head>
 <body>
   <main>
-    <h1>Family Tree &amp; Branchline</h1>
-    <p class="subtitle">Ancestry &amp; Kinship Map</p>
+    <header class="hero">
+      <p class="eyebrow">Support &amp; Privacy</p>
+      <h1>Family Tree &amp; Branchline</h1>
+      <p class="lede">An ancestry and kinship mapping app for building, viewing, and maintaining family trees on iPhone and iPad.</p>
+      <p class="date">Effective date: June 28, 2026</p>
+    </header>
 
-    <section class="section">
-      <p>Family Tree &amp; Branchline helps families map relatives, relationships, and ancestry in a clear visual tree.</p>
+    <section aria-labelledby="support">
+      <h2 id="support">Support</h2>
+      <p>
+        For help, app feedback, privacy questions, or deletion requests, use the support issue tracker at
+        <a href="https://github.com/MindCoreAI/family-tree-app/issues">github.com/MindCoreAI/family-tree-app/issues</a>.
+      </p>
       <div class="metadata">
         <div>
           <strong>Platform</strong>
@@ -111,14 +176,51 @@
       </div>
     </section>
 
-    <section class="section">
-      <h2>Support</h2>
-      <p>For support, app feedback, or privacy questions, contact the developer through the support channel listed on the App Store product page.</p>
+    <section aria-labelledby="privacy">
+      <h2 id="privacy">Privacy Policy</h2>
+      <p>
+        Family Tree &amp; Branchline is designed to keep family-tree content on your device. The developer does not currently operate an account system, cloud sync service, or developer analytics service for this app.
+      </p>
+
+      <h3>Information Stored On Your Device</h3>
+      <ul>
+        <li>Family trees, people, relationships, notes, dates, places, and app settings are stored locally on your device.</li>
+        <li>Photos you add to profiles are stored locally as app data.</li>
+        <li>Backup import and export use local JSON files that you choose to open, save, or share.</li>
+      </ul>
+
+      <h3>Advertising And Consent</h3>
+      <p>
+        The app uses Google Mobile Ads to show banner ads and Google User Messaging Platform to support regional consent and privacy options. Google may process advertising identifiers, device information, approximate location, diagnostics, ad interaction, and related data according to Google's policies and your consent choices.
+      </p>
+      <p>
+        Learn more in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. You can use the app's Ad Privacy Options when they are required for your region.
+      </p>
+
+      <h3>In-App Purchases</h3>
+      <p>
+        Family Tree &amp; Branchline offers a one-time Remove Ads purchase. In-app purchases are handled by Apple through the App Store. Apple may process purchase, billing, refund, and transaction information under Apple's own policies.
+      </p>
+
+      <h3>Data Sharing</h3>
+      <p>
+        The developer does not sell your family-tree data. Files exported from the app remain under your control, and sharing exported files is your choice.
+      </p>
+
+      <h3>Deleting Data</h3>
+      <p>
+        You can delete family data in the app or uninstall the app to remove local app data from the device. Any backup files you exported separately remain wherever you saved them unless you delete those files yourself.
+      </p>
     </section>
 
-    <section class="section">
-      <h2>Ads</h2>
-      <p>This site hosts the app's authorized digital sellers file for AdMob at <a href="/app-ads.txt">/app-ads.txt</a>.</p>
+    <section aria-labelledby="terms">
+      <h2 id="terms">Terms Of Use</h2>
+      <p>
+        Family Tree &amp; Branchline is provided for personal family-history organization. You are responsible for the accuracy of information you enter and for obtaining permission before sharing another person's private family information.
+      </p>
+      <p>
+        Do not use the app in a way that violates Apple, Google, or AdMob terms, or any applicable law.
+      </p>
     </section>
   </main>
 </body>
