@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Support, privacy policy and terms for Little Wins, a parent-managed family points and rewards app.">
+    <title>Little Wins · Support & Privacy</title>
+    <link rel="icon" href="./icon.png" type="image/png">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top"><img src="./icon.png" width="48" height="48" alt=""><span>Little Wins</span></a>
+      <nav aria-label="Page sections"><a href="#support">Support</a><a href="#privacy">Privacy</a><a href="#terms">Terms</a></nav>
+    </header>
+    <main id="main">
+      <header class="hero" id="top">
+        <p class="eyebrow">Family points & rewards</p>
+        <h1>A little help for<br>your little wins.</h1>
+        <p class="lede">Keep everyday encouragement simple. Find help with family sharing, point history and backups, and learn how your family’s information is handled.</p>
+        <p class="release-note"><span class="dot" aria-hidden="true"></span> Current version: free pilot · no ads or purchases</p>
+      </header>
+
+      <section id="support" aria-labelledby="support-heading">
+        <div class="section-heading"><p class="eyebrow">We’re here to help</p><h2 id="support-heading">Support</h2></div>
+        <div class="contact-card">
+          <div><h3>Contact Little Wins</h3><p>Email <a href="mailto:eu8929@gmail.com?subject=Little%20Wins%20Support">eu8929@gmail.com</a> with your app version, device model and a short description of the issue.</p></div>
+          <p class="small">Please keep child names, parent PINs, invite codes, access credentials and recovery keys out of support messages. We never need your Apple password.</p>
+        </div>
+        <div class="faq">
+          <details><summary>How do I invite another caregiver?</summary><p>From parent Settings, enable family sharing and create an invite. On the other caregiver’s device, choose “Join an existing family” and enter the code. Invites work once and expire after one hour. Both devices need internet access for shared changes.</p></details>
+          <details><summary>When will another caregiver see a win?</summary><p>Connected devices update automatically while Little Wins is open. Reopening the app refreshes the shared records after time offline. Network delays can affect when an update appears; shared changes need internet access.</p></details>
+          <details><summary>Can I correct a mistaken award or redemption?</summary><p>Open History in parent mode and reverse the mistaken entry. Little Wins records the correction so the point history remains understandable.</p></details>
+          <details><summary>How do I keep a backup?</summary><p>Use Settings → Export family backup. Backups are readable JSON files containing family information; they are not password-encrypted. Save them privately. An export does not include your parent PIN, cloud access credential or recovery key.</p><p>Restoring a backup replaces the family records on that device. Disconnect sharing before restoring a local backup. Keep a copy of your existing records first.</p></details>
+          <details><summary>What if I lose access to the shared family?</summary><p>The family owner can save a recovery key from parent Settings. Keep it private and separate from your ordinary backup. Recovery keeps the family records but disconnects previous devices and invalidates old invites; caregivers will need new invitations.</p><p>Recovery replaces your saved key; save the new recovery key afterwards. Generating a new recovery key also invalidates the previous one.</p><p>There is no email-based recovery or universal parent PIN. Keep a private backup and recovery key rather than relying on support to retrieve them.</p></details>
+          <details><summary>Does converting points to dollars move money?</summary><p>No. The conversion is a reference for a family’s reward budget. Parents arrange rewards themselves. Little Wins does not hold money, send payments or buy toys.</p></details>
+          <details><summary>Is Family Plus available to buy?</summary><p>The current pilot includes all current features free. Purchases are disabled. If a paid release becomes available, the app will show Apple’s actual plan price, billing period and any eligible trial before payment.</p></details>
+        </div>
+      </section>
+
+      <section id="privacy" aria-labelledby="privacy-heading">
+        <div class="section-heading"><p class="eyebrow">Your family’s information</p><h2 id="privacy-heading">Privacy policy</h2><p class="small">Effective October 4, 2026 · current free pilot</p></div>
+        <p>Little Wins is provided by Zhe Wu. It helps parents and guardians record children’s activities, points, goals and family rewards. A child does not need an account or email address. Parents can use a nickname and should enter only information they want connected caregivers to see.</p>
+        <h3>Information on your device</h3>
+        <p>The app stores family settings, child names or nicknames and avatar choices, earning activities, rewards, point history and corrections, goals and routines. Parent protection and shared-family credentials are stored separately in Apple’s Keychain. Appearance and this device’s reminder preference are stored in app preferences.</p>
+        <p>Optional reminders are local device notifications with generic text, without child or routine names. Apple provides device authentication; Little Wins receives the authentication result, not biometric templates.</p>
+        <h3>Optional caregiver sharing</h3>
+        <p>When a parent enables sharing, family records are sent over HTTPS to our Cloudflare service and stored in Cloudflare D1. The service also stores a family identifier, hashed device and recovery credentials, expiring invitations and command receipts needed to avoid duplicate actions. Invited caregivers can view and update the shared family.</p>
+        <p>Keep invites and recovery keys private. Anyone holding a valid credential or recovery key may gain access. Recovering a family revokes previous device access and invitations. The app does not currently offer selective removal of an individual caregiver.</p>
+        <h3>How information is used</h3>
+        <p>Family information is used to provide point tracking, synchronization, caregiver access, recovery and parent-requested features. The app has no advertising SDK or third-party child analytics, and we do not sell family information. It does not request location, contacts, camera or microphone access.</p>
+        <p>Cloudflare hosts the shared service and processes network requests, which necessarily involve network addressing information. Apple provides distribution and operating-system services. Their handling of service information is described in the <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare privacy policy</a> and <a href="https://www.apple.com/legal/privacy/">Apple privacy policy</a>.</p>
+        <h3>Backups and support messages</h3>
+        <p>Exports contain readable family records, including names, balances and history. The app does not password-encrypt exported JSON. A destination you choose through the device’s sharing controls receives the file. Keep exports private and remove them from that destination when no longer needed.</p>
+        <p>If you email support, we receive the address and information you include and use them to answer your request. Please do not send child names or private access credentials.</p>
+        <h3>Controls, deletion and retention</h3>
+        <p>Parents can correct point history, export records, turn off reminders and disconnect a device from sharing. The connected family owner can delete the shared cloud family from parent Settings. Disconnecting keeps this device’s local copy and leaves the shared family available to other caregivers. Cloud deletion removes the current shared family record and its live access; existing device copies and exported files remain with their holders.</p>
+        <p>Shared records remain while the cloud family exists; there is no automatic inactivity deletion in the current pilot. Deleted database records may remain temporarily in Cloudflare’s recovery history, for up to 30 days depending on the hosting plan. See <a href="https://developers.cloudflare.com/d1/reference/time-travel/">Cloudflare D1 recovery history</a>. Removing the app removes its local app files; separately exported files and Keychain items can remain.</p>
+        <p>For questions or requests about family information, contact <a href="mailto:eu8929@gmail.com?subject=Little%20Wins%20Privacy">eu8929@gmail.com</a>. We may need to verify your authority over a shared family before acting on a request.</p>
+        <h3>Payments and policy updates</h3>
+        <p>The current pilot does not accept subscription purchases. Before enabling billing, we will update this policy and the App Store disclosures to explain the verified purchase records, family association and retention needed for Family Plus. Apple will process payments; Little Wins will not receive your payment-card number.</p>
+        <p>This support website is hosted by GitHub Pages. We have added no analytics scripts or advertising to the page. GitHub processes requests under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">privacy statement</a>. Material changes to Little Wins’ handling of family information will be reflected in this policy and its effective date.</p>
+      </section>
+
+      <section id="terms" aria-labelledby="terms-heading">
+        <div class="section-heading"><p class="eyebrow">Using Little Wins</p><h2 id="terms-heading">Terms of use</h2><p class="small">Effective October 4, 2026 · current free pilot</p></div>
+        <p>Little Wins is intended for personal family use under a parent or guardian’s supervision. Parents choose activities, point values, daily limits and suitable rewards, and decide which caregivers can access their family’s information.</p>
+        <p>Points are family records, with no cash value held by Little Wins. A points-to-currency rate is a budgeting reference. Reward redemption records a family’s decision; parents are responsible for arranging the reward.</p>
+        <p>The parent PIN helps keep ordinary parent controls separate from the child dashboard. Keep your PIN, invitations, recovery key and backups private. Shared changes require internet access; updates and reminder delivery can be delayed by network or device conditions. Keep backups of records you want to preserve.</p>
+        <p>All current features are free during the pilot. Any future subscription will be presented through Apple with its price, period, renewal terms and eligible introductory offer before purchase. A future paid release will preserve access to existing earned records and free local tracking and export when a plan ends.</p>
+        <p>Apps distributed through the App Store are licensed under <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple’s standard Licensed Application End User License Agreement</a> unless a separate app-specific license is provided. For support, contact <a href="mailto:eu8929@gmail.com?subject=Little%20Wins%20Support">eu8929@gmail.com</a>.</p>
+      </section>
+    </main>
+    <footer><p>Little Wins · Provided by Zhe Wu</p><a href="mailto:eu8929@gmail.com">eu8929@gmail.com</a></footer>
+  </body>
+</html>
