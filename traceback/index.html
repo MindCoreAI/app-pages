@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TraceBack GPS History | Support and Privacy</title>
+  <meta name="description" content="Support and privacy information for TraceBack GPS History by MindCoreAI. Explore recorded places, replay dates and inspect GPS readings.">
+  <style>
+    :root { color-scheme: light dark; --paper: #fff; --ink: #202624; --muted: #535b57; --line: #d7dfdb; --link: #096b54; }
+    * { box-sizing: border-box; letter-spacing: 0; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    main { width: min(780px, calc(100% - 40px)); margin: 0 auto; padding: 40px 0 60px; }
+    header, section { padding: 24px 0; border-bottom: 1px solid var(--line); }
+    header img { width: 64px; height: 64px; border-radius: 12px; }
+    h1 { font-size: 32px; line-height: 1.2; margin: 18px 0 12px; }
+    h2 { font-size: 24px; line-height: 1.3; margin: 0 0 16px; }
+    h3 { font-size: 18px; margin: 24px 0 8px; }
+    p { margin: 0 0 16px; }
+    h1, h2, h3, p, li { overflow-wrap: anywhere; }
+    .secondary { color: var(--muted); }
+    a { color: var(--link); text-underline-offset: 3px; }
+    a:focus-visible { outline: 3px solid var(--link); outline-offset: 4px; }
+    nav { display: flex; flex-wrap: wrap; gap: 12px 24px; }
+    nav a { padding: 8px 0; }
+    li { margin-bottom: 10px; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #181b19; --ink: #eff4f0; --muted: #bdc9c1; --line: #3b463f; --link: #79d7ba; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="app-icon.png" alt="TraceBack app icon" width="64" height="64">
+    <h1>TraceBack GPS History</h1>
+    <p>Explore recorded places, replay a date range and inspect individual GPS readings.</p>
+    <p class="secondary">MindCoreAI / Zhe Wu. iPhone, iOS 17 or later.<br>Effective date: October 31, 2026.</p>
+    <nav aria-label="Page sections"><a href="#support">Support</a><a href="#recording">Recording</a><a href="#privacy">Privacy policy</a></nav>
+  </header>
+  <section id="support" aria-labelledby="support-title">
+    <h2 id="support-title">Support</h2>
+    <p>For help or privacy questions, email <a href="mailto:eu8929@gmail.com">eu8929@gmail.com</a>. Include your iPhone model, iOS version, app version and a description of the problem. Do not send private location files or passwords unless information from a location file is necessary and you choose to share it.</p>
+    <h3>Review a day or a year</h3>
+    <p>In Replay, choose a start and end time and select Replay Range. Route shows recorded readings and playback. Summary groups nearby readings using an adjustable radius. The number on a group is the number of recorded calendar days, not a visit count. Open a group and select a day for its full route within your selected range. Overview returns to the original range.</p>
+    <p>Map Layers in Summary controls Trace and Direction Arrows independently. Arrows show sampled directions of recorded movement; overlapping repeat journeys may have different directions. Trace lines do not bridge recording gaps in Summary. In Route, dashed gap connectors indicate uncertainty, not measured travel.</p>
+    <h3>Try examples without changing your history</h3>
+    <p>The Sample Library is available from Record, Replay and Settings. Its walk and year use fictional data in separate temporary storage. They do not record your location or add points to your history.</p>
+    <h3>Import and export</h3>
+    <p>Settings exports a chosen range as GPX or CSV using the system share sheet. Import accepts GPX, compatible CSV and legacy Google Timeline JSON containing timelineObjects. Newer on-device Google Timeline exports are not supported. Keep an independent export before deleting history or removing the app.</p>
+    <h3>Deletion and retention</h3>
+    <p>Settings can delete a chosen range or all trace data after confirmation. Deleting all trace data also stops recording. The retention selection is applied only when you choose Apply Retention Now and confirm; it is not a scheduled background cleanup. Existing exported copies and backups must be managed separately.</p>
+  </section>
+  <section id="recording" aria-labelledby="recording-title">
+    <h2 id="recording-title">Recording and limitations</h2>
+    <p>Start recording deliberately in Record. Smart mode monitors significant location changes and visits, and can enable standard GPS updates after it detects movement. Precise Trip uses standard location updates for greater route detail at a higher battery cost. Pause Recording stops the location services used for recording.</p>
+    <p>Location permission is required to record. Always access supports background recording; reduced accuracy, signal loss, Low Power Mode and iOS scheduling can reduce detail or delivery. Diagnostics in Settings shows the current permission and recording status. Force-quitting the app can prevent further delivery until it is reopened. TraceBack cannot recover locations that were never recorded.</p>
+    <p>A Gap marker marks an interval between readings that should not be treated as a continuous recorded route. Its position is a visual marker, not a guessed GPS sample. Tap an actual recorded point to inspect its time, accuracy and available measurements.</p>
+    <p>TraceBack is a personal history tool. It is not turn-by-turn navigation, emergency guidance, covert monitoring or a guarantee of continuous tracking. Use it on your own device with appropriate consent. Maps may require a network connection.</p>
+  </section>
+  <section id="privacy" aria-labelledby="privacy-title">
+    <h2 id="privacy-title">Privacy policy</h2>
+    <h3>On-device location history</h3>
+    <p>TraceBack by MindCoreAI / Zhe Wu stores location history in the app's local storage on your iPhone. With permission, it records coordinates, timestamps, horizontal accuracy, available altitude, speed and course, reading source and recording-session information such as session names. Imported route files are processed on the device. No app account is required.</p>
+    <p>The developer does not receive your route database or operate a route-sync server. The app has no advertising SDK, third-party analytics, advertising identifier collection or cross-app tracking.</p>
+    <h3>Permission and background access</h3>
+    <p>Location is used to save the history you choose to record. Background location allows that activity when the app is not visible. Pause recording in the app or change location permission in iPhone Settings at any time. Changing permission does not delete existing history.</p>
+    <h3>Storage, retention and app lock</h3>
+    <p>Location history, session metadata and preferences remain in the app until you delete them, apply retention cleanup or remove the app, subject to backups you later restore. The developer cannot remotely access or delete your local history. Face ID and device-passcode authentication are handled by iOS; the app does not receive your biometric template or passcode. App lock controls access to the interface and is not a separate encrypted vault.</p>
+    <h3>Apple Maps and device backups</h3>
+    <p>Maps are supplied by Apple's MapKit. Map display can make network requests to Apple. Apple processes its service data under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. TraceBack does not send your route database to a developer-operated server. App data may be included in iCloud or computer backups according to your device settings; TraceBack does not provide its own cloud synchronization.</p>
+    <h3>Exports and sharing</h3>
+    <p>GPX and CSV exports contain precise locations and timestamps and may contain other recorded measurements. They leave the app only when you select a destination. Files stored with another app, person or cloud provider are subject to that destination's practices. Deleting data in TraceBack does not delete copies you already exported or backed up.</p>
+    <h3>Support and this website</h3>
+    <p>If you contact support, the email address, message and any attachments you choose to send are used to respond and investigate the issue. Email is handled by the email provider. Contact <a href="mailto:eu8929@gmail.com">eu8929@gmail.com</a> with questions about removal of information you supplied.</p>
+    <p>This page is hosted on GitHub Pages and contains no advertising or analytics scripts. GitHub may process web request information for hosting and security under its <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">Privacy Statement</a>.</p>
+    <h3>Changes</h3>
+    <p>If the app's data practices change, this policy and the App Store privacy disclosure will be updated. The effective date appears above.</p>
+  </section>
+</main>
+</body>
+</html>
